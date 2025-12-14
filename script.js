@@ -520,7 +520,7 @@ function showRandomToast() {
     Toastify({
         text: toastContent,
         duration: 5000,
-        close: true,
+        // close: true,
         gravity: 'bottom',
         position: 'center',
         escapeMarkup: false,
@@ -1228,4 +1228,5 @@ document.addEventListener('DOMContentLoaded', function() {
     } catch (error) {
         console.error('Error initializing components:', error);
     }
+
 });
