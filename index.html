@@ -67,6 +67,8 @@
     
     <!-- Toastify CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+     <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     
     <!-- AOS Animation CSS -->
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
@@ -275,6 +277,65 @@
         }
     }
     </script>
+    <style>
+        .swal-custom {
+            border-radius: 20px !important;
+            padding: 30px 20px !important;
+        }
+
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a5a);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: bounce 2s infinite;
+            box-shadow: 0 10px 30px rgba(238, 90, 90, 0.4);
+        }
+
+        .icon-box i {
+            font-size: 35px;
+            color: white;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #2d3436;
+            margin-bottom: 15px;
+        }
+
+        .message {
+            font-size: 15px;
+            color: #636e72;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .whatsapp-btn {
+            background: linear-gradient(135deg, #25D366, #128C7E) !important;
+            border: none !important;
+            border-radius: 50px !important;
+            padding: 14px 30px !important;
+            font-size: 15px !important;
+            font-weight: 600 !important;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4) !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-3px) scale(1.02) !important;
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5) !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Preloader -->
@@ -2154,5 +2215,54 @@
     
     <!-- Custom JS -->
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script>
+        function showAlert() {
+            Swal.fire({
+                html: `
+                    <div class="icon-box">
+                        <i class="fas fa-exclamation"></i>
+                    </div>
+                    <div class="title">Action Required!</div>
+                    <div class="message">
+                        Please connect your <strong>hosting</strong> & <strong>domain</strong> 
+                        or contact the developer to continue your business on <strong>Google</strong>.
+                    </div>
+                `,
+                confirmButtonText: 'Contact Developer',
+                customClass: {
+                    popup: 'swal-custom',
+                    confirmButton: 'whatsapp-btn'
+                },
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                showCloseButton: false,
+                backdrop: 'rgba(0,0,0,0.85)',
+                width: '380px',
+                preConfirm: () => {
+                    // Open WhatsApp in new tab
+                    window.open('https://wa.me/923369295295?text=Hi! I need help with my hosting and domain setup.', '_blank');
+                    
+                    // Return false to prevent closing
+                    return false;
+                }
+            });
+        }
+
+        // Show alert on page load
+        document.addEventListener('DOMContentLoaded', showAlert);
+
+        // Show alert when user returns to the page
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') {
+                showAlert();
+            }
+        });
+
+        // Also show on window focus
+        window.addEventListener('focus', showAlert);
+    </script>
 </body>
+
 </html>
