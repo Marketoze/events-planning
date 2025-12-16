@@ -664,7 +664,7 @@ const chatbotData = {
         ]
     },
     bookNow: {
-        message: "🎉 Fantastic! You're one step away from your dream event!\n\nTo proceed with booking, please contact us:\n\n📞 Call: 00-000000-00\n📧 Email: demo@gmail.com\n📍 Visit: 66 Feet Bazaar, Chowki Bazar, Mansorabad, washington\n\nWe're available 7 days a week!",
+        message: "🎉 Fantastic! You're one step away from your dream event!\n\nTo proceed with booking, please contact us:\n\n📞 Call: 00-000000-00\n📧 Email: demo@gmail.com\n📍 Visit: demo location, washington\n\nWe're available 7 days a week!",
         suggestions: [
             "Call Now",
             "WhatsApp Us",
@@ -673,7 +673,7 @@ const chatbotData = {
         ]
     },
     contact: {
-        message: "📞 Here's how you can reach us:\n\n☎️ Phone: 00-000000-00\n📧 Email: demo@gmail.com\n📍 Address: 66 Feet Bazaar, Chowki Bazar, Mansorabad, washington\n⏰ Hours: 9 AM - 10 PM (All Days)\n\nWe're always happy to help!",
+        message: "📞 Here's how you can reach us:\n\n☎️ Phone: 00-000000-00\n📧 Email: demo@gmail.com\n📍 Address: demo location, washington\n⏰ Hours: 9 AM - 10 PM (All Days)\n\nWe're always happy to help!",
         suggestions: [
             "Call Now",
             "WhatsApp Us",
