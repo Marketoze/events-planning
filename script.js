@@ -1,6 +1,6 @@
 /**
  * ============================================
- * SHAREEF SONS EVENT ORGANIZER
+ * Event Planner Demo EVENT ORGANIZER
  * Premium Event Planning Website
  * Designed & Developed by Dilawar Pro
  * ============================================
@@ -565,7 +565,7 @@ let userPreferences = {
 // Chatbot responses and suggestions
 const chatbotData = {
     initial: {
-        message: "👋 Welcome to Shareef Sons Event Organizer! How can I assist you today?",
+        message: "👋 Welcome to Event Planner Demo Event Organizer! How can I assist you today?",
         suggestions: [
             "View Services",
             "Get a Quote",
@@ -691,7 +691,7 @@ const chatbotData = {
         ]
     },
     thanks: {
-        message: "🙏 Thank you for chatting with us! We hope we could help.\n\nRemember, for the best service in Faisalabad, choose Shareef Sons Event Organizer!\n\nIs there anything else you'd like to know?",
+        message: "🙏 Thank you for chatting with us! We hope we could help.\n\nRemember, for the best service in Faisalabad, choose Event Planner Demo Event Organizer!\n\nIs there anything else you'd like to know?",
         suggestions: [
             "View Services",
             "Get Quote",
@@ -1200,7 +1200,7 @@ if ('serviceWorker' in navigator) {
 // ============================================
 // CONSOLE BRANDING
 // ============================================
-console.log('%c🎉 Shareef Sons Event Organizer', 'font-size: 24px; font-weight: bold; color: #667eea;');
+console.log('%c🎉 Event Planner Demo Event Organizer', 'font-size: 24px; font-weight: bold; color: #667eea;');
 console.log('%c📞 Contact: 0306-7095007', 'font-size: 14px; color: #764ba2;');
 console.log('%c🌐 Designed & Developed by Dilawar Pro', 'font-size: 12px; color: #f093fb;');
 console.log('%c🔗 https://dilawarpro.com', 'font-size: 12px; color: #667eea;');
