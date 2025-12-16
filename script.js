@@ -664,7 +664,7 @@ const chatbotData = {
         ]
     },
     bookNow: {
-        message: "🎉 Fantastic! You're one step away from your dream event!\n\nTo proceed with booking, please contact us:\n\n📞 Call: 0306-7095007\n📧 Email: Farooqg5179@gmail.com\n📍 Visit: 66 Feet Bazaar, Chowki Bazar, Mansorabad, Faisalabad\n\nWe're available 7 days a week!",
+        message: "🎉 Fantastic! You're one step away from your dream event!\n\nTo proceed with booking, please contact us:\n\n📞 Call: 00-000000-00\n📧 Email: demo@gmail.com\n📍 Visit: 66 Feet Bazaar, Chowki Bazar, Mansorabad, washington\n\nWe're available 7 days a week!",
         suggestions: [
             "Call Now",
             "WhatsApp Us",
@@ -673,7 +673,7 @@ const chatbotData = {
         ]
     },
     contact: {
-        message: "📞 Here's how you can reach us:\n\n☎️ Phone: 0306-7095007\n📧 Email: Farooqg5179@gmail.com\n📍 Address: 66 Feet Bazaar, Chowki Bazar, Mansorabad, Faisalabad\n⏰ Hours: 9 AM - 10 PM (All Days)\n\nWe're always happy to help!",
+        message: "📞 Here's how you can reach us:\n\n☎️ Phone: 00-000000-00\n📧 Email: demo@gmail.com\n📍 Address: 66 Feet Bazaar, Chowki Bazar, Mansorabad, washington\n⏰ Hours: 9 AM - 10 PM (All Days)\n\nWe're always happy to help!",
         suggestions: [
             "Call Now",
             "WhatsApp Us",
@@ -682,7 +682,7 @@ const chatbotData = {
         ]
     },
     human: {
-        message: "👨‍💼 Of course! Our friendly team is ready to assist you personally.\n\n📞 Call us now: 0306-7095007\n\nAlternatively, you can:\n• WhatsApp us for quick response\n• Visit our office\n• Send an email\n\nWe typically respond within minutes!",
+        message: "👨‍💼 Of course! Our friendly team is ready to assist you personally.\n\n📞 Call us now: 00-000000-00\n\nAlternatively, you can:\n• WhatsApp us for quick response\n• Visit our office\n• Send an email\n\nWe typically respond within minutes!",
         suggestions: [
             "Call Now",
             "WhatsApp Us",
@@ -691,7 +691,7 @@ const chatbotData = {
         ]
     },
     thanks: {
-        message: "🙏 Thank you for chatting with us! We hope we could help.\n\nRemember, for the best service in Faisalabad, choose Event Planner Demo Event Organizer!\n\nIs there anything else you'd like to know?",
+        message: "🙏 Thank you for chatting with us! We hope we could help.\n\nRemember, for the best service in washington, choose Event Planner Demo Event Organizer!\n\nIs there anything else you'd like to know?",
         suggestions: [
             "View Services",
             "Get Quote",
@@ -704,7 +704,7 @@ const chatbotData = {
         isEnded: true
     },
     default: {
-        message: "I appreciate your message! 😊 To better assist you, please select one of the options below or call us directly at 0306-7095007 for immediate assistance.",
+        message: "I appreciate your message! 😊 To better assist you, please select one of the options below or call us directly at 00-000000-00 for immediate assistance.",
         suggestions: [
             "View Services",
             "Get Quote",
@@ -1201,7 +1201,7 @@ if ('serviceWorker' in navigator) {
 // CONSOLE BRANDING
 // ============================================
 console.log('%c🎉 Event Planner Demo Event Organizer', 'font-size: 24px; font-weight: bold; color: #667eea;');
-console.log('%c📞 Contact: 0306-7095007', 'font-size: 14px; color: #764ba2;');
+console.log('%c📞 Contact: 00-000000-00', 'font-size: 14px; color: #764ba2;');
 console.log('%c🌐 Designed & Developed by Dilawar Pro', 'font-size: 12px; color: #f093fb;');
 console.log('%c🔗 https://dilawarpro.com', 'font-size: 12px; color: #667eea;');
 
