@@ -2215,54 +2215,6 @@
     
     <!-- Custom JS -->
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
-    <script>
-        function showAlert() {
-            Swal.fire({
-                html: `
-                    <div class="icon-box">
-                        <i class="fas fa-exclamation"></i>
-                    </div>
-                    <div class="title">Action Required!</div>
-                    <div class="message">
-                        Please connect your <strong>hosting</strong> & <strong>domain</strong> 
-                        or contact the developer to continue your business on <strong>Google</strong>.
-                    </div>
-                `,
-                confirmButtonText: 'Contact Developer',
-                customClass: {
-                    popup: 'swal-custom',
-                    confirmButton: 'whatsapp-btn'
-                },
-                allowOutsideClick: false,
-                allowEscapeKey: false,
-                showCloseButton: false,
-                backdrop: 'rgba(0,0,0,0.85)',
-                width: '380px',
-                preConfirm: () => {
-                    // Open WhatsApp in new tab
-                    window.open('https://wa.me/923369295295?text=Hi! I need help with my hosting and domain setup.', '_blank');
-                    
-                    // Return false to prevent closing
-                    return false;
-                }
-            });
-        }
-
-        // Show alert on page load
-        document.addEventListener('DOMContentLoaded', showAlert);
-
-        // Show alert when user returns to the page
-        document.addEventListener('visibilitychange', () => {
-            if (document.visibilityState === 'visible') {
-                showAlert();
-            }
-        });
-
-        // Also show on window focus
-        window.addEventListener('focus', showAlert);
-    </script>
 </body>
 
 </html>
